@@ -19,3 +19,5 @@ function Beranda() {
         </div>
     );
 }
+
+export default Beranda;

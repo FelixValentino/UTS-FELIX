@@ -1,5 +1,5 @@
-//import './assets/style.css';
-//import { Routes, Route } from 'react-router-dom';
+import './assets/style.css';
+import { Routes, Route } from 'react-router-dom';
 
 // TODO 1  Import Komponen Layout (Header, SideBar, Footer)
 import Header from './components/layout/Header';
@@ -15,7 +15,7 @@ import Pendidikan from './pages/Pendidikan';
 import Riset from './pages/Riset';
 import Mahasiswa from './pages/Mahasiswa';
 import LainLain from './pages/LainLain';
-import { Route } from 'react-router-dom';
+//import { Route } from 'react-router-dom';
 
 // lakukan commit "selesai TODO 2" dan push 
 
