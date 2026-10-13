@@ -15,6 +15,8 @@ import Pendidikan from './pages/Pendidikan';
 import Riset from './pages/Riset';
 import Mahasiswa from './pages/Mahasiswa';
 import LainLain from './pages/LainLain';
+import Berita from './pages/Berita';
+import NotFound from './pages/NotFound';
 //import { Route } from 'react-router-dom';
 
 // lakukan commit "selesai TODO 2" dan push 
@@ -39,6 +41,8 @@ function App() {
             <Route path="/riset" element={<Riset />} />
             <Route path="/mahasiswa" element={<Mahasiswa />} />
             <Route path="/lain-lain" element={<LainLain />} />
+            <Route path="/berita" element={<Berita />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
          {/* TODO 4 SideBar */}
