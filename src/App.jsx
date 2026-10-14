@@ -17,6 +17,7 @@ import Mahasiswa from './pages/Mahasiswa';
 import LainLain from './pages/LainLain';
 import Berita from './pages/Berita';
 import NotFound from './pages/NotFound';
+import Array from './pages/Array';
 //import { Route } from 'react-router-dom';
 
 // lakukan commit "selesai TODO 2" dan push 
@@ -29,11 +30,6 @@ function App() {
       <Header />
       <div className="main-wrapper">
         <main className="content-area">
-          {/* TODO 6 Routes 
-          <Routes>
-            <Route path="/" element={<Beranda />} />
-          </Routes>
-          */}
           <Routes>
             <Route path="/" element={<Beranda />} />
             <Route path="/profil" element={<Profil />} />
@@ -42,6 +38,7 @@ function App() {
             <Route path="/mahasiswa" element={<Mahasiswa />} />
             <Route path="/lain-lain" element={<LainLain />} />
             <Route path="/berita" element={<Berita />} />
+            <Route path="/array" element={<Array />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
@@ -58,5 +55,3 @@ function App() {
 export default App;
 
 // TODO 7 lakukan commit dengan nama "selesai TODO 7" dan push 
-
-// test
