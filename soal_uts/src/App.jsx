@@ -17,6 +17,7 @@ import Mahasiswa from './pages/Mahasiswa';
 import LainLain from './pages/LainLain';
 import Berita from './pages/Berita';
 import NotFound from './pages/NotFound';
+import Array from './pages/Array';
 //import { Route } from 'react-router-dom';
 
 // lakukan commit "selesai TODO 2" dan push 
@@ -37,6 +38,7 @@ function App() {
             <Route path="/mahasiswa" element={<Mahasiswa />} />
             <Route path="/lain-lain" element={<LainLain />} />
             <Route path="/berita" element={<Berita />} />
+            <Route path="/array" element={<Array />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
