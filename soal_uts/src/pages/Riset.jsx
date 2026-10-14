@@ -17,7 +17,7 @@
 
 // lakukan commit "selesai TODO 6" dan push 
 
-function Riset() {
+export default function Riset() {
   return (
     <div>
       <h2 style={{ marginTop: 0 }}>Fokus Riset</h2>
@@ -33,5 +33,3 @@ function Riset() {
     </div>
   );
 }
-
-export default Riset;

@@ -15,7 +15,7 @@
 
 // 3. lakukan commit dan push 
 
-function LainLain() {
+export default function LainLain() {
   return (
     <div>
       <h2 style={{ marginTop: 0 }}>Informasi Lain-Lain</h2>
@@ -28,5 +28,3 @@ function LainLain() {
     </div>
   );
 }
-
-export default LainLain;

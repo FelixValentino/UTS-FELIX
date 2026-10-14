@@ -17,7 +17,7 @@
 
 // lakukan commit  "selesai TODO 13" dan push 
 
-function Mahasiswa() {
+export default function Mahasiswa() {
   return (
     <div>
       <h2 style={{ marginTop: 0 }}>Kegiatan Mahasiswa</h2>
@@ -33,5 +33,3 @@ function Mahasiswa() {
     </div>
   );
 }
-
-export default Mahasiswa;
