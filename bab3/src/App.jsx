@@ -43,7 +43,8 @@
 import React from 'react';
 // Mengimpor CSS global
 import './App.css'; 
-
+import { Route, Routes } from 'react-router-dom';
+import Badge from './component/Badge';
 // Mengimpor komponen-komponen pendukung yang ada di proyekmu
 import AppNavigation from './component/AppNavigation';
 import HeaderBanner from './component/HeaderBanner';
@@ -76,6 +77,13 @@ function App() {
         {/* Komponen Demo atau Tambahan */}
         <CardStatusDemo />
       </LayoutGrid>
+
+      <Routes>
+        <Route path='/transaksi' element={ <TransaksiItem />} />
+        <Route path='/kartu' element={ <KartuRingkasan />} />
+        <Route path='/badge' element={ <Badge />} />
+        <Route path='/wallet' element={ <WalletSummary />} />
+      </Routes>
     </div>
   );
 }
