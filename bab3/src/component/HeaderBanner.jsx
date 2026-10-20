@@ -10,3 +10,5 @@ function HeaderBanner() {
         </div>
     );
 }
+
+export default HeaderBanner;
