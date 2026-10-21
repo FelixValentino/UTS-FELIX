@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Form, InputGroup, Modal, Button, Table, ProgressBar } from 'react-bootstrap';
+import {useState} from 'react';
+import {Form, InputGroup, Modal, Button, Table, ProgressBar} from 'react-bootstrap';
 
 function TransactionManager() {
     const [show, setShow] = useState(false);
