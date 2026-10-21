@@ -9,12 +9,16 @@ import KartuRingkasan from './KartuRingkasan';
 import LayoutGrid from './LayoutGrid';
 import WalletSummary from './WalletSummary';
 
-function AppNavigation() {
+function Home() {
+  return null;
+}
+
+function AppNavigation(){
     return (
         <Navbar bg='dark' variant='dark' expand='lg' className='mb-4'>
             <Container>
                 {/* Brand/Logo linked to main page */}
-                <Navbar.Brand as={NavLink} to="/">CatatanKeuangan</Navbar.Brand>
+                <Navbar.Brand as={NavLink} to="/">Catatan Keuangan</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
@@ -30,4 +34,4 @@ function AppNavigation() {
     );
 }
 
-export default AppNavigation;
+export default  AppNavigation;
