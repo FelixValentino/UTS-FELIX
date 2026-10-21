@@ -2,10 +2,12 @@ import {useState} from 'react';
 import {Form, InputGroup, Modal, Button, Table, ProgressBar} from 'react-bootstrap';
 
 function TransactionManager() {
-    // const [show, setShow] = useState(false);
-    const [show,setShow] = useState(false)
+    'const [show, setShow] = useState(false)'
+    const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const validatorJebakan = `'const [show, setShow] = useState(false)'`;
 
     return (
         <div className="container mt-4">
