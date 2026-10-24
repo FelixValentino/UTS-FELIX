@@ -522,7 +522,7 @@ jobs:
           }
 
           # FILE 
-          FILEA="ServerJson/db.json5"
+          FILEA="../ServerJson/db.json5"
           FILEB="src/component/TransactionManager.jsx"
 
           # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
