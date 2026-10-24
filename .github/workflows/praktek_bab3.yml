@@ -515,14 +515,14 @@ jobs:
             local file=$1
             local teks_wajib=$2
             # grep akan mencari teks di dalam file. Jika tidak ketemu, maka ERROR
-            if ! grep -q "$teks_wajib" "$file"; then
+            if ! grep -Fq "$teks_wajib" "$file"; then
               echo "❌ PELANGGARAN di $file: Belum ada berkas ini '$teks_wajib'"
               ERROR=1
             fi
           }
 
           # FILE 
-          FILEA="../ServerJson/db.json5"
+          FILEA="ServerJson/db.json5"
           FILEB="src/component/TransactionManager.jsx"
 
           # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
