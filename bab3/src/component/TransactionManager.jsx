@@ -21,7 +21,7 @@ export default function TransactionManager() {
             });
     };
 
-    const ambilDatAsync = async () =>{
+    const ambilDataAsync = async () =>{
         try {
             const response = await fetch('http://localhost:3000/transaksi');
             if (!response.ok) {
