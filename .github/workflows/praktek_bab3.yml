@@ -598,7 +598,8 @@ jobs:
           cek_teks "$FILEB" "console.log ('Data diterima:', data)"
           cek_teks "$FILEB" "setTransaksi(data)"
           cek_teks "$FILEB" "console.error('Error:', error.message)"
-          cek_teks "$FILEB" " ambilDataAsync();"
+          cek_teks "$FILEB" "ambilDataAsync();"
+          cek_teks "$FILEB" "<AppNavigation />"
           # Cara menggunakannya 
           if [ $ERROR -eq 1 ]; then
             echo ""
