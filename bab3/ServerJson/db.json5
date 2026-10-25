@@ -1,5 +1,1 @@
-{
-  transaksi: [
-    {id:1, keterangan:'Belanja Bulanan', kategori:'Pengeluaran', nominal:'Rp 750.000'}
-  ]
-}
+{transaksi:[{id:1, keterangan:'Belanja Bulanan', kategori:'Pengeluaran', nominal:'Rp 750.000'}]}
