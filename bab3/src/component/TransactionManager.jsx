@@ -3,7 +3,7 @@ import {Form, InputGroup, Modal, Button, Table, ProgressBar} from 'react-bootstr
 
 function TransactionManager() {
 
-    const [show, setShow] = useState(false);
+    //const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
