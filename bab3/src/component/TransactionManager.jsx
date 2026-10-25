@@ -21,11 +21,11 @@ export default function TransactionManager() {
             });
     };
 
-    const ambilDataAsync = async () => {
+    const ambilDatAsync = async () => {
         try {
             const response = await fetch('http://localhost:3000/transaksi');
             if (!response.ok) {
-                throw new Error('Gagal mengambil data dari server')
+                throw new Error ('Gagal mengambil data dari server')
             }
             const data = await response.json()
             console.log ('Data diterima:', data)
