@@ -54,14 +54,51 @@ import CardStatusDemo from './component/CardStatusDemo';
 import TransactionManager from './component/TransactionManager';
 import FormTambahTransaksi from './component/FormTambahTransaksi';
 import LayoutGrid from './component/LayoutGrid';
+import TransaksiItem from './component/TransaksiItem';
 
 
-function App() {
-  return (
-    <div className="app-container">
-      {/* Menu Navigasi Utama */}
-      <AppNavigation />
+// function App() {
+//   return (
+//     <div className="app-container">
+//       {/* Menu Navigasi Utama */}
+//       <AppNavigation />
       
+//       {/* Banner Bagian Atas */}
+//       <HeaderBanner />
+      
+//       {/* Mengatur tampilan menggunakan Grid agar rapi */}
+//       <LayoutGrid>
+//         {/* Ringkasan Akun / Dompet */}
+//         <WalletSummary />
+//         <KartuRingkasan />
+        
+//         {/* Fitur Utama: Manajemen dan Tambah Transaksi */}
+//         <TransactionManager />
+//         <FormTambahTransaksi />
+        
+//         {/* Komponen Demo atau Tambahan */}
+//         <CardStatusDemo />
+//       </LayoutGrid>
+
+//       <Routes>
+//         <Route path='/transaksi' element={ <TransaksiItem />} />
+//         <Route path='/kartu' element={ <KartuRingkasan />} />
+//         <Route path='/badge' element={ <Badge />} />
+//         <Route path='/wallet' element={ <WalletSummary />} />
+//         <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
+//         <Route path='/HeaderBanner' element={ <HeaderBanner/>  } />
+//         <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
+//         <Route path='/AppNavigation' element={ <AppNavigation/> } />
+//         <Route path='/TransactionManager' element={ <TransactionManager/> } />
+//       </Routes>
+//     </div>
+//   );
+// }
+
+// Halaman Utama (Home) yang menggabungkan layout dasarmu
+function HomePage() {
+  return (
+    <>
       {/* Banner Bagian Atas */}
       <HeaderBanner />
       
@@ -78,17 +115,32 @@ function App() {
         {/* Komponen Demo atau Tambahan */}
         <CardStatusDemo />
       </LayoutGrid>
+    </>
+  );
+}
 
+function App() {
+  return (
+    <div className="app-container">
+      {/* Menu Navigasi Utama akan selalu muncul di atas halaman mana pun */}
+      <AppNavigation />
+      
+      {/* Sistem Navigasi Antar Halaman */}
       <Routes>
-        <Route path='/transaksi' element={ <TransaksiItem />} />
-        <Route path='/kartu' element={ <KartuRingkasan />} />
-        <Route path='/badge' element={ <Badge />} />
-        <Route path='/wallet' element={ <WalletSummary />} />
-        <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
-        <Route path='/HeaderBanner' element={ <HeaderBanner/>  } />
-        <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
-        <Route path='/AppNavigation' element={ <AppNavigation/> } />
-        <Route path='/TransactionManager' element={ <TransactionManager/> } />
+        {/* Halaman utama menampilkan layout lengkap */}
+        <Route path='/' element={<HomePage />} />
+        
+        {/* Halaman transaksi utama */}
+        <Route path='/transaksi' element={<TransaksiItem />} />
+        
+        {/* Route penyesuaian link menu Dropdown Komponen */}
+        <Route path='/badge' element={<Badge />} />
+        <Route path='/card-status' element={<CardStatusDemo />} />
+        <Route path='/header-banner' element={<HeaderBanner />} />
+        <Route path='/transaction-manager' element={<TransactionManager />} />
+        <Route path='/kartu-ringkasan' element={<KartuRingkasan />} />
+        <Route path='/layout-grid' element={<LayoutGrid />} />
+        <Route path='/wallet-summary' element={<WalletSummary />} />
       </Routes>
     </div>
   );
