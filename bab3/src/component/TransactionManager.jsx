@@ -14,24 +14,24 @@ export default function TransactionManager() {
             .then ((response) => response.json())
             .then((data) => {
                 console.log('Data diterima:', data);
-                setTransaksi(data)
+                setTransaksi(data);
             })
             .catch((error) => {
                 console.error("Gagal mengambil data:", error);
             });
     };
 
-    const ambilDatAsync = async () => {
+    const ambilDatAsync = async () =>{
         try {
             const response = await fetch('http://localhost:3000/transaksi');
             if (!response.ok) {
-                throw new Error ('Gagal mengambil data dari server')
+                throw new Error ('Gagal mengambil data dari server');
             }
-            const data = await response.json()
-            console.log ('Data diterima:', data)
-            setTransaksi(data)
+            const data = await response.json();
+            console.log ('Data diterima:', data);
+            setTransaksi(data);
         } catch (error) {
-            console.error('Error:', error.message)
+            console.error('Error:', error.message);
         }
     };
 
