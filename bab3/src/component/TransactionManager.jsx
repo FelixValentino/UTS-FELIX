@@ -11,7 +11,7 @@ export default function TransactionManager() {
 
     const ambilData = () => {
         fetch('http://localhost:3000/transaksi')
-            .then((response) => response.json())
+            .then ((response) => response.json())
             .then((data) => {
                 console.log('Data diterima:', data);
                 setTransaksi(data)
