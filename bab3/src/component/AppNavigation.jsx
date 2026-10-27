@@ -77,6 +77,11 @@ function AppNavigation(){
             <NavDropdown.Item as={NavLink} to="/kartu-ringkasan">KartuRingkasan</NavDropdown.Item>
             <NavDropdown.Item as={NavLink} to="/layout-grid">LayoutGrid</NavDropdown.Item>
             <NavDropdown.Item as={NavLink} to="/wallet-summary">WalletSummary</NavDropdown.Item>
+
+            <NavDropdown.Divider />
+            
+            <NavDropdown.Item as={NavLink} to="/daftar-tugas-function">Daftar Tugas Function</NavDropdown.Item>
+            <NavDropdown.Item as={NavLink} to="/post-list-axios">Post List Axios</NavDropdown.Item>
           </NavDropdown> 
 
         </Navbar.Collapse> 

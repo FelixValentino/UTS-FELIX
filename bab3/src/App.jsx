@@ -166,8 +166,9 @@ import FormTambahTransaksi from './component/FormTambahTransaksi';
 import LayoutGrid from './component/LayoutGrid';
 import TransaksiItem from './component/TransaksiItem';
 import Badge from './component/Badge';
+import DaftarTugasFunction from './component/DaftarTugasFunction';
+import PostListAxios from './component/PostListAxios';
 
-// 1. NAVBAR DENGAN STATE DROPDOWN INTERAKTIF
 function LocalNavigation() {
   // State untuk menyimpan status apakah dropdown sedang terbuka (true) atau tertutup (false)
   const [isOpen, setIsOpen] = useState(false);
@@ -221,6 +222,9 @@ function LocalNavigation() {
                 <li><NavLink className="dropdown-item" to="/kartu-ringkasan" onClick={closeDropdown}>KartuRingkasan</NavLink></li>
                 <li><NavLink className="dropdown-item" to="/layout-grid" onClick={closeDropdown}>LayoutGrid</NavLink></li>
                 <li><NavLink className="dropdown-item" to="/wallet-summary" onClick={closeDropdown}>WalletSummary</NavLink></li>
+                <li><hr className="dropdown-divider" /></li>
+                <li><NavLink className="dropdown-item" to="/daftar-tugas-function" onClick={closeDropdown}>DaftarTugasFunction</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/post-list-axios" onClick={closeDropdown}>PostListAxios</NavLink></li>
               </ul>
             </div>
 
@@ -231,30 +235,12 @@ function LocalNavigation() {
   );
 }
 
-// 2. HALAMAN UTAMA (HOME)
-function HomePage() {
-  return (
-    <>
-      <HeaderBanner />
-      <LayoutGrid>
-        <WalletSummary />
-        <KartuRingkasan />
-        <TransactionManager />
-        <FormTambahTransaksi />
-        <CardStatusDemo />
-      </LayoutGrid>
-    </>
-  );
-}
-
-// 3. KOMPONEN UTAMA APLIKASI
 function App() {
   return (
     <div className="app-container">
       <LocalNavigation />
       
       <Routes>
-        <Route path='/' element={<HomePage />} />
         <Route path='/transaksi' element={<TransaksiItem />} />
         <Route path='/badge' element={<Badge />} />
         <Route path='/card-status' element={<CardStatusDemo />} />
@@ -263,6 +249,8 @@ function App() {
         <Route path='/kartu-ringkasan' element={<KartuRingkasan />} />
         <Route path='/layout-grid' element={<LayoutGrid />} />
         <Route path='/wallet-summary' element={<WalletSummary />} />
+        <Route path='/daftar-tugas-function' element={<DaftarTugasFunction />} />
+        <Route path='/post-list-axios' element={<PostListAxios />} />
       </Routes>
     </div>
   );
